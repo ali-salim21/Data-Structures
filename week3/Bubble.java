@@ -20,7 +20,7 @@ public class Bubble {
             for (j = 0; j < n-k; j++) {
                 if (list.get(j) > list.get(j+1)) {
                     temp = list.get(j);
-                    list.set(j, j+1);
+                    list.set(j, list.get(j+1));
                     list.set(j+1, temp);
                     exchangeMode = true;
                 }
